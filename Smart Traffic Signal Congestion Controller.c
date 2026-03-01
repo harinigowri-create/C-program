@@ -34,4 +34,5 @@ printf("Congestion Minutes: %d\n", congestionMinutes);
 printf("Longest Congestion Streak: %d\n", longestStreak);
 
 return 0;
+
 }
