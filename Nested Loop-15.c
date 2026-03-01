@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main() {
-       int i,j,n = 5;
+       int i,j,n = 9;
 
        for(i = 1; i <= n; i++) {
 
@@ -18,3 +18,4 @@ int main() {
        return 0;
 
 }
+
