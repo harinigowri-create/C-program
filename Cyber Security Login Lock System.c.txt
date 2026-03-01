@@ -1,0 +1,34 @@
+#include<stdio.h>
+int main() {
+int n,i = 0;
+int attempt;
+int consecutivefail = 0;
+int totalfail = 0;
+int lockattempt = 0;
+scanf("%d",&n);
+while(i < n)
+{
+scanf("%d",&attempt);
+if(attempt == 0)
+{
+totalfail++;
+consecutivefail++;
+if(consecutivefail == 3 && lockattempt == 0)
+{
+lockattempt = i + 1;
+}
+}
+else {
+consecutivefail = 0;
+}
+i++;
+}
+if(lockattempt != 0)
+printf("Lock Triggered At Attempt : %d\n",lockattempt);
+else
+printf("Lock Triggered At Attempt : Not Locked\n");
+
+printf("Total Failed At Attempt : %d\n",totalfail);
+
+return 0;
+}
